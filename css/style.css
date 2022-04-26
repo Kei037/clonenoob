@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@keyframes dorpdown {
+  from {
+    opacity: 0;
+    /* top: -15px; */
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    /* top: 0px; */
+    height: 160px;
+  }
+}
+
+@keyframes submenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html,body { height: 100%;  }
+body {
+  font-size: 18px;
+  line-height: 28px;
+}
+ul, li, ol { list-style: none; }
+
+#h-wrap {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background: pink;
+  overflow: hidden;
+}
+
+#h-wrap:hover > a {
+  background: #f00f00;
+}
+
+#h-wrap:hover> .submenu {
+  display: block;
+  animation-name: dorpdown;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+}
+
+.submenu {
+  position: relative;
+  background: #000;
+  display: none;
+  z-index: 500;
+}
+
+.submenu a {
+  display: block;
+  line-height: 4rem;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+}
+
+.submenu li a:hover {
+  background: #f00f00;
+  animation-name: submenu;
+  animation-duration: .8s;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin-right: 120px;
+  background: #fff;
+  line-height: 1;
+}
+
+.gnb {
+  position: relative;
+  float: right;
+}
+
+.mainmenu {
+  position: relative;
+  background: lightgreen;
+}
+
+.mainmenu > li {
+  width: 200px;
+  float: left;
+}
+
+.mainmenu > li > a {
+  position: relative;
+  display: block;
+  color: white;
+  margin-right: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+.right-gnb {
+  float: left;
+}
+
+.right-gnb > li {
+  float: left;
+  margin-right: 50px;
+}
+
+
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background: lightskyblue;
+}
