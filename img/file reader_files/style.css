@@ -1,0 +1,7 @@
+@charset "UTF-8";
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; background: gray; }
+ul, li, ol { list-style: none; }
+/* a { display: inline-block; color: #black; text-decoration: none; border: 1px solid black; border-radius: 3px; padding: 0 5px; line-height: 30px; margin-top: 10px; } */
+
+img { width: 200px; }
