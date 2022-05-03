@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
 }
 
 
-.frist-section {
+.first-section {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -249,11 +249,11 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   text-align: center;
 }
 
-.frist-section .inner {
+.first-section .inner {
   position: relative;
 }
 
-.frist-section > .inner > .mainTxt {
+.first-section > .inner > .mainTxt {
   width: 980px;
   color: #0c254b;
   font-size: 48px;
@@ -262,23 +262,14 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   text-align: center;
   margin: 0 auto;
   opacity: 0;
-  top: -50px;
   transition: .5s;
-  transition-property: transform, opacity;
   transition-timing-function: ease-in-out;
   transform: translateY(60px);
 }
 
-.first-section > .inner > .on {
-  position: relative;
-  transition-property: transform, opacity;
-  transition-timing-function: ease-in-out;
-  overflow: visible;
-  transform: translateY(0);
-  opacity: 1;
-}
 
-.frist-section > .inner > p {
+
+.first-section > .inner > p {
   width: 980px;
   font-size: 20px;
   line-height: 30px;
@@ -291,7 +282,6 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   transition-property: transform, opacity;
   transition-timing-function: ease-in-out;
   overflow: visible;
-  transform: translateY(60px);
 }
 
 .list-items {
@@ -304,7 +294,6 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   transition-property: transform, opacity;
   transition-timing-function: ease-in-out;
   overflow: visible;
-  transform: translateY(60px);
 }
 
 .list-items .items {
@@ -363,6 +352,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   background-color: #f8f8f8;
   opacity: 0;
   transition: .5s;
+  transition-delay: .1s;
   transition-property: transform, opacity;
   transition-timing-function: ease-in-out;
   overflow: visible;
@@ -384,6 +374,13 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
 }
 
 .third-div {
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 0s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-in-out;
+  overflow: visible;
+  transform: translateY(60px);
   margin-top: 80px;
 }
 
@@ -678,4 +675,10 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; }
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+
+.on {
+  transform: translateY(0);
+  opacity: 1;
 }
