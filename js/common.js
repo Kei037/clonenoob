@@ -1,24 +1,14 @@
 $(function(){
   $(window).scroll(function(){
     let windowHeight = $(this).height();
-    let scTop = $(this).scrollTop();
-    let slideHeight = $(".container").height();
+    let windowTop = $(this).scrollTop();
     // console.log($(".inner").offset().top);
     // console.log(scTop);
     // console.log($(".inner").offset().top + windowHeight);
-    $(".inner").each(function(i){
+    $(".inner").each(function(){
       let thisOffset = $(this).offset();
-      if ( thisOffset.top <= scTop) {
-        $(".mainTxt").addClass("on").css({opacity: "1", transform: "translateY(0)"});
-        // $(".mainTxt").css({opacity: "1", transform: "translateY(0)"});
-      }else if ( thisOffset.top <= scTop + 13 ) {
-        $(".inner").addClass("on1").css({opacity: "1", transform: "translateY(0)"});
-      }else if ( thisOffset.top <= scTop + 20 ) {
-        $(".list-items ").addClass("on").css({opacity: "1", transform: "translateY(0)"});
-      }else if ( thisOffset.top <= scTop + 21 ) {
-        $("second-div").addClass("on").css({opacity: "1", transform: "translateY(0)"});
-      }else if ( thisOffset.top <= scTop + 25 ) {
-        $("third-div").addClass("on").css({opacity: "1", transform: "translateY(0)"});
+      if ( thisOffset.top <= windowTop + 150 && windowTop <= thisOffset.top + windowHeight ) {
+        $(".mainTxt").addClass("active").css({opacity: "1", transform: "translateY(0px)"});
       }
     });
   });
