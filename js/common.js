@@ -7,8 +7,12 @@ $(function(){
     // console.log($(".inner").offset().top + windowHeight);
     $(".inner").each(function(){
       let thisOffset = $(this).offset();
-      if ( thisOffset.top <= windowTop + 150 && windowTop <= thisOffset.top + windowHeight ) {
-        $(".mainTxt").addClass("active").css({opacity: "1", transform: "translateY(0px)"});
+      if ( thisOffset.top <= windowTop + 150 && thisOffset.top <= (windowTop + windowHeight) ) {
+        $(".mainTxt").removeClass("hide");
+      }else if ( thisOffset.top <= windowTop + 155 && thisOffset.top <= (windowTop + windowHeight) ) {
+        $(".inner p").animate({"opacity" : '1'}, 0);
+      }else if ( thisOffset.top <= windowTop + 160 && thisOffset.top <= (windowTop + windowHeight) ) {
+        $(".inner .list-items").animate({'opacity': '1'}, 0);
       }
     });
   });
