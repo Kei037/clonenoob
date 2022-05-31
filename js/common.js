@@ -15,6 +15,12 @@ $(function(){
         $(".inner .list-items").animate({'opacity': '1'}, 0);
       }
     });
+
+    if ( windowTop == 0 ) {
+      $("#go-to-top").css("transform", "rotate(0deg)");
+    }else {
+      $("#go-to-top").css("transform", "rotate(180deg)");
+    }
   });
 
 /*---------------슬라이드 영역---------------*/
@@ -42,5 +48,6 @@ $(function(){
   }
   $(".btn").each(function(){
     slideFunc($(this));
-  })
+  });
+
 });
