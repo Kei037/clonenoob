@@ -10,6 +10,7 @@ $(function(){
       let thisOffset = $(this).offset();
       if ( thisOffset.top <= scTop) {
         $(".mainTxt").addClass("opc");
+        // $(".mainTxt").css("opacity","1")
       }
     })
   });
