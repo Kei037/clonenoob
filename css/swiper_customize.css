@@ -1,0 +1,15 @@
+.logo-wrap {
+  position: relative;
+}
+
+.logo-swiper-wrap {
+  margin-top: 80px;
+}
+
+.logo-swiper {
+  display: flex;
+}
+
+.logo-swiper img {
+  margin-bottom: 40px;
+}

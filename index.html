@@ -8,41 +8,45 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper_customize.css">
   </head>
   <body>
     <div id="go-to-top">
-      <a href="#"></a>
+      <a href="#"><img src="https://alchera.ai/assets/front/images/common/svg/ico_floating_down.svg" alt=""></a>
     </div>
-    <div id="wrap">
-      <video class="clip" src="./video/main_viusal_bg.mp4" muted autoplay loop buffered></video>
-      <header id="header">
-        <div class="h-inner">
-          <div id="logo">
-            <h1><a href="#"><img src="https://alchera.ai/assets/front/images/common/svg/alchera_logo.svg" alt=""></a></h1>
+    <div id="main-wrap">
+      <div id="wrap">
+        <video class="clip" src="./video/main_viusal_bg.mp4" muted autoplay loop buffered></video>
+        <header id="header">
+          <div class="h-inner">
+            <div id="logo">
+              <h1><a href="#"><img src="https://alchera.ai/assets/front/images/common/svg/alchera_logo.svg" alt=""></a></h1>
+            </div>
+            <div class="gnb-wrap">
+              <ul id="gnb">
+                <li><a href="#">기술</a></li>
+                <li><a href="#">제품</a></li>
+                <li><a href="#">솔루션</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+              <ul id="rigth-gnb">
+                <li><div class="btn-gnb1"><a href="#">데모신청</a></div></li>
+                <li><div class="btn-gnb2"><a href="#">KOR</a></div></li>
+              </ul>
+            </div>
           </div>
-          <div class="gnb-wrap">
-            <ul id="gnb">
-              <li><a href="#">기술</a></li>
-              <li><a href="#">제품</a></li>
-              <li><a href="#">솔루션</a></li>
-              <li><a href="#">자료실</a></li>
-            </ul>
-            <ul id="rigth-gnb">
-              <li><div class="btn-gnb1"><a href="#">데모신청</a></div></li>
-              <li><div class="btn-gnb2"><a href="#">KOR</a></div></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div id="mainbanner">
-        <div class="inner">
-          <div class="text-area">
-            <h1>Innovate Your Everyday Life With</h1>
-            <div class="txt-lotate">
-              <div class="txt1">Smart AI</div>
-              <div class="txt2">Tristed AI</div>
-              <div class="txt3"></div>
-              <!-- <div class="txt4">Friendly AI</div> -->
+        </header>
+        <div id="mainbanner">
+          <div class="inner">
+            <div class="text-area">
+              <h1>Innovate Your Everyday Life With</h1>
+              <div class="txt-lotate">
+                <div class="txt1">Smart AI</div>
+                <div class="txt2">Tristed AI</div>
+                <div class="txt3"></div>
+                <!-- <div class="txt4">Friendly AI</div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -50,10 +54,10 @@
     </div>
     <div id="container">
       <div class="long-container">
-        <div class="frist-section">
+        <div class="first-section">
           <div class="inner">
-            <h2 class="mainTxt">Make your AI Dreams a Reality</h2>
-            <p>알체라는 얼굴, 영상인식 Visual AI 분야의 국내 1위 업체로<br>인공지능으로 고객의 삶과 사회를 혁신하는 AI회사입니다.</p>
+            <h2 class="mainTxt hide">Make your AI Dreams a Reality</h2>
+            <p class="hide">알체라는 얼굴, 영상인식 Visual AI 분야의 국내 1위 업체로<br>인공지능으로 고객의 삶과 사회를 혁신하는 AI회사입니다.</p>
             <div class="list-items">
               <div class="items">
                 <div class="items-img01"></div>
@@ -160,9 +164,9 @@
           <div class="forth-section-wrap">
             <h2>알체라의 새로운 소식을 만나보세요</h2>
             <div class="news-list">
-              <div class="news-slide">
-                <div class="slide-list">
-                  <div class="news">
+              <div class="news-slide swiper-container">
+                <div class="slide-list swiper-wrapper">
+                  <div class="news swiper-slide">
                     <a href="#">
                       <div class="new-chart">
                         <div class="news-img01"></div>
@@ -174,7 +178,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="news">
+                  <div class="news swiper-slide">
                     <a href="#">
                       <div class="new-chart">
                         <div class="news-img"><img src="./img/news02.png" alt=""></div>
@@ -186,7 +190,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="news">
+                  <div class="news swiper-slide">
                     <a href="#">
                       <div class="new-chart">
                         <div class="news-img"><img src="./img/news03.png" alt=""></div>
@@ -198,7 +202,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="news">
+                  <div class="news swiper-slide">
                     <a href="#">
                       <div class="new-chart">
                         <div class="news-img"><img src="./img/news04.png" alt=""></div>
@@ -210,7 +214,87 @@
                       </div>
                     </a>
                   </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news05.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news06.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news07.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news08.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news09.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news swiper-slide">
+                    <a href="#">
+                      <div class="new-chart">
+                        <div class="news-img"><img src="./img/news10.png" alt=""></div>
+                        <div class="info">
+                          <div class="new-tag">News</div>
+                          <div class="new-name">가상자산 커스터디 합작법인 '블루시아' 설립</div>
+                          <div class="new-date">2022.04.05</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="btn-box">
+                  <img class="btn prev">
+                </div>
+                <div class="btn-box">
+                  <img class="btn next">
+                </div> -->
               </div>
             </div>
             <div class="newsbtn"><a href="#">최근 뉴스 더보기</a></div>
@@ -218,18 +302,88 @@
         </div>
         <div class="five-section">
           <h2>많은 고객들이 알체라와 함께 하고 있습니다</h2>
-          <div class="logo_slide">
-            <div class="logo_slide_bar">
+          <div class="logo-swiper-wrap">
+            <div class="logo-swiper">
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_01.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_02.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_03.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_04.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_05.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_06.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_07.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_08.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_09.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_10.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_11.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_12.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_13.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_14.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_15.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_16.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_18.png"><img src="https://alchera.ai/assets/front/images/company/img_logo_19.png"></div>
+              <div class="logo-slide"><img src="https://alchera.ai/assets/front/images/company/img_logo_21.png"><img src="https://alchera.ai/assets/front/images/logo/img_logo_39.png"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="short-container">
-        <div class="inner"></div>
+        <div class="short-inner">
+          <img src="https://alchera.ai/assets/front/images/index/svg/svg_contactus.svg" alt="">
+          <div class="s-txt">
+            알체라의 AI와 함께<br>누구보다 빠르게 꿈의 시대에 도달하세요
+          </div>
+          <div class="s-btn">
+            <a href="#"><span>문의하기</span></a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- <footer id="footer">
-      <div class="inner">
-    </footer> -->
+    <footer id="footer">
+      <div class="f-inner">
+        <div class="footer-top">
+          <div class="f-logo">
+            <a href="#">logo</a>
+          </div>
+          <div class="f-content">
+            <div class="f-list">
+              <a href="#">기술</a>
+              <ul>
+                <li><a href="#">Visual AI</a></li>
+                <li><a href="#">AI Data</a></li>
+              </ul>
+            </div>
+            <div class="f-list">
+              <a href="#">제품</a>
+              <ul>
+                <li><a href="#">AIIR SDK</a></li>
+                <li><a href="#">AIIR API</a></li>
+              </ul>
+            </div>
+            <div class="f-list">
+              <a href="#">솔루션</a>
+              <ul>
+                <li><a href="#">AIIR ID</a></li>
+                <li><a href="#">AIIR Pass</a></li>
+                <li><a href="#">AIIR Scout</a></li>
+                <li><a href="#">Fire Scout</a></li>
+              </ul>
+            </div>
+            <div class="f-list">
+              <a href="#">자료실</a>
+              <ul>
+                <li><a href="#">리소스</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="#">블로그</a></li>
+              </ul>
+            </div>
+            <div class="f-list">
+              <a href="#">회사소개</a>
+              <ul>
+                <li><a href="#">알체라 소개</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">제휴/도입문의</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.js"></script>
   </body>
 </html>
